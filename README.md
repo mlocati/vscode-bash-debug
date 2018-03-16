@@ -61,5 +61,5 @@ For Windows users:
 * Watch variables should be specified with $ at the beginning (this expression is evaluated in bash - for example `${#PWD}` returns path length)
 * The debugger supports only non-interactive scripts (no stdin)
 * Currently debugger stops at first command.
-* Executing `set -e` causes debugging script to exit (`bashdb` fixes this in version `4.4-0.93`). Consider using "trap 'exit $?' ERR".
+* Executing `set -e` causes debugging script to exit (`bashdb` fixes this in version `4.4-0.93`). Consider using `trap 'exit $?' ERR`.
 * Windows Subsystem Linux in Windows 10 (>=15014) seems to be working with some hacks (https://github.com/Microsoft/BashOnWindows/issues/2#issuecomment-209118529, https://github.com/Microsoft/BashOnWindows/issues/1489);
